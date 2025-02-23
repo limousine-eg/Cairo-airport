@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Customer Registration - Limousine Cairo">
+    <meta property="og:title" content="Customer Registration - Limousine Cairo">
     <meta property="og:description" content="Register for our premium limousine services and enjoy a 30% discount">
     <title>Customer Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="logo.png" type="image/png">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -31,7 +31,7 @@
 
         .container {
             background-color: #ffffff;
-            padding: 20px; /* Increased padding to ensure space around the content */
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             width: 100%;
@@ -145,12 +145,12 @@
         .social-icons a.instagram i {
             color: #E4405F;
         }
-		.social-icons a.facebook{
-			color:#1877F2;
-		}
-		.social-icons a.whatsapp{
-			color:#25D366;
-		}
+        .social-icons a.facebook {
+            color: #1877F2;
+        }
+        .social-icons a.whatsapp {
+            color: #25D366;
+        }
 
         .social-icons a.google i {
             background: linear-gradient(45deg, #DB4437, #F4B400, #0F9D58, #4285F4);
@@ -214,6 +214,26 @@
             }
         }
 
+        /* New styles for logo and text alignment */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* المسافة بين اللوجو والنص */
+        }
+
+        .logo {
+            width: 50px; /* حجم اللوجو */
+            height: auto;
+            margin-right: 10px; /* المسافة بين اللوجو والنص */
+        }
+
+        .logo-container p {
+            font-size: 1.5rem;
+            color: #4a4a4a;
+            margin: 0;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -258,7 +278,11 @@
             </div>
         </div>
 
-        <h1>Limousine Cairo</h1>
+        <!-- Logo and Text Section -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <p>Cairo Limousine</p>
+        </div>
 
         <input type="text" id="customerName" placeholder="Customer Name" />
         <input type="text" id="customerPhone" placeholder="Phone Number" />
@@ -277,25 +301,22 @@
             <a href="https://www.instagram.com/pavlolimousine/" target="_blank" class="instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-			<a href="https://www.facebook.com/PavloLimo/" target="_blank" class="facebook">
-				<i class="fab fa-facebook"></i>
-			</a>
-			<a href="https://wa.me/201148838542" target="_blank" class="whatsapp">
-				<i class="fab fa-whatsapp"></i>
-			</a>
+            <a href="https://www.facebook.com/PavloLimo/" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/201148838542" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
             <a href="https://www.google.com/maps/place/%D8%A8%D8%A7%DA%A4%D9%84%D9%88+%D9%84%D9%8A%D9%85%D9%88%D8%B2%D9%8A%D9%86+-+PavloLimousine%E2%80%AD/@29.1244948,34.5514483,7z/data=!4m18!1m9!3m8!1s0xa7f03ebf23b94093:0x9d60d93ef3e0c934!2z2KjYp9qk2YTZiCDZhNmK2YXZiNiy2YrZhiAtIFBhdmxvTGltb3VzaW5l!8m2!3d29.1455922!4d31.9098603!9m1!1b1!16s%2Fg%2F11j_17zk86!3m7!1s0xa7f03ebf23b94093:0x9d60d93ef3e0c934!8m2!3d29.1455922!4d31.9098603!9m1!1b1!16s%2Fg%2F11j_17zk86?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="google">
                 <i class="fab fa-google"></i>
             </a>
-			  
-    
-</div>
         </div>
+
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
-	  
         document.addEventListener('DOMContentLoaded', function() {
             document.body.onselectstart = function() { return false; };
             document.body.oncopy = function() { return false; }; //
